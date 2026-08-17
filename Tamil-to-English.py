@@ -4,7 +4,7 @@ from googletrans import Translator
 translator = Translator()
 
 # 2) Translate Tamil → English
-Text = input("Enter the text in English")
+Text = input("Enter the text in English: ")
 result = translator.translate(
     Text,
     src='en',
