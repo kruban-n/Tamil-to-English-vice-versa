@@ -1,14 +1,16 @@
 from googletrans import Translator
 
-# 1) Initialize
+#Initialising object
 translator = Translator()
 
-# 2) Translate Tamil → English
 Text = input("Enter the text in English: ")
+
+#translating from English to Tamil
 result = translator.translate(
     Text,
     src='en',
     dest='ta'
 )
 
+#printing the translated text from object 'result'
 print(result.text)
